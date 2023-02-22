@@ -66,6 +66,6 @@ public class Gerente {
 	 * Metodo encargado de devolver toda la informacion del gerente.
 	 */
 	public String toString() {
-		return this.nombre + " " + this.segundoApellido + " " + this.segundoApellido;
+		return this.nombre + " " + this.primerApellido + " " + this.segundoApellido;
 	}
 }

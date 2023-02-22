@@ -17,6 +17,10 @@ public class RestauranteController {
 	 */
 	private List<Restaurante> restaurantes;
 	/**
+	 * Listado de restaurantes para el filtrado de datos en la tabla segun columnas.
+	 */
+	private List<Restaurante> restaurantesFiltrados;
+	/**
 	 * Servicio con los metodos que realiza la logica de negocio de restaurantes.
 	 */
 	private RestauranteService rs = new RestauranteService();
@@ -44,6 +48,20 @@ public class RestauranteController {
 	 */
 	public void setRestaurantes(List<Restaurante> restaurantes) {
 		this.restaurantes = restaurantes;
+	}
+
+	/**
+	 * @return the restaurantesFiltrados
+	 */
+	public List<Restaurante> getRestaurantesFiltrados() {
+		return restaurantesFiltrados;
+	}
+
+	/**
+	 * @param restaurantesFiltrados the restaurantesFiltrados to set
+	 */
+	public void setRestaurantesFiltrados(List<Restaurante> restaurantesFiltrados) {
+		this.restaurantesFiltrados = restaurantesFiltrados;
 	}
 
 	
